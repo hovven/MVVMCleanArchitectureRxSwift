@@ -1,0 +1,50 @@
+PODS:
+  - Alamofire (5.4.1)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
+  - Moya/RxSwift (14.0.0):
+    - Moya/Core
+    - RxSwift (~> 5.0)
+  - Reusable (4.1.1):
+    - Reusable/Storyboard (= 4.1.1)
+    - Reusable/View (= 4.1.1)
+  - Reusable/Storyboard (4.1.1)
+  - Reusable/View (4.1.1)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxFlow (2.9.1):
+    - RxCocoa (>= 5.1.1)
+    - RxSwift (>= 5.1.1)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.1)
+
+DEPENDENCIES:
+  - Moya/RxSwift (~> 14.0)
+  - Reusable
+  - RxFlow (= 2.9.1)
+  - RxSwift (= 5.1.1)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Moya
+    - Reusable
+    - RxCocoa
+    - RxFlow
+    - RxRelay
+    - RxSwift
+
+SPEC CHECKSUMS:
+  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  Reusable: 53a9acf5c536f229b31b5865782414b508252ddb
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxFlow: 029e260333ef843b349ba9cb9265929941830aee
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+
+PODFILE CHECKSUM: 8a22eea3945fe8bab93856f7899916a92e70bb6b
+
+COCOAPODS: 1.9.1

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ic7-kR-oEY">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Weather View Controller-->
+        <scene sceneID="Jft-f0-Dvk">
+            <objects>
+                <viewController id="Ic7-kR-oEY" customClass="WeatherViewController" customModule="Weather_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h9r-PS-8Zb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="FUF-Ms-kmr" userLabel="Background Image View">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gKo-At-8Gy" userLabel="Blur Image View">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rzf-bI-43T">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5H4-Nc-ffl">
+                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sTv-fs-0oP" userLabel="Search Result Table View">
+                                <rect key="frame" x="0.0" y="100" width="414" height="269"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5qs-qr-fcC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5H4-Nc-ffl" firstAttribute="trailing" secondItem="5qs-qr-fcC" secondAttribute="trailing" id="3c4-LV-glz"/>
+                            <constraint firstItem="rzf-bI-43T" firstAttribute="leading" secondItem="5qs-qr-fcC" secondAttribute="leading" id="4L0-Yr-EEU"/>
+                            <constraint firstItem="5qs-qr-fcC" firstAttribute="trailing" secondItem="sTv-fs-0oP" secondAttribute="trailing" id="4cI-Jo-Vo7"/>
+                            <constraint firstItem="rzf-bI-43T" firstAttribute="top" secondItem="h9r-PS-8Zb" secondAttribute="top" id="AMg-8U-AsL"/>
+                            <constraint firstItem="5qs-qr-fcC" firstAttribute="trailing" secondItem="FUF-Ms-kmr" secondAttribute="trailing" id="AOy-dK-mKU"/>
+                            <constraint firstItem="5qs-qr-fcC" firstAttribute="bottom" secondItem="FUF-Ms-kmr" secondAttribute="bottom" id="G32-v1-if3"/>
+                            <constraint firstItem="5qs-qr-fcC" firstAttribute="bottom" secondItem="rzf-bI-43T" secondAttribute="bottom" id="Nsq-ig-qoj"/>
+                            <constraint firstItem="FUF-Ms-kmr" firstAttribute="leading" secondItem="5qs-qr-fcC" secondAttribute="leading" id="XDh-BP-1ze"/>
+                            <constraint firstItem="5qs-qr-fcC" firstAttribute="trailing" secondItem="rzf-bI-43T" secondAttribute="trailing" id="Ym8-kE-l06"/>
+                            <constraint firstItem="5qs-qr-fcC" firstAttribute="bottom" secondItem="gKo-At-8Gy" secondAttribute="bottom" id="blz-wI-7l3"/>
+                            <constraint firstItem="5qs-qr-fcC" firstAttribute="trailing" secondItem="gKo-At-8Gy" secondAttribute="trailing" id="fVw-7U-9SL"/>
+                            <constraint firstItem="FUF-Ms-kmr" firstAttribute="top" secondItem="5qs-qr-fcC" secondAttribute="top" id="haG-Cf-Bre"/>
+                            <constraint firstItem="5H4-Nc-ffl" firstAttribute="top" secondItem="5qs-qr-fcC" secondAttribute="top" id="i8Q-zb-fR5"/>
+                            <constraint firstItem="5H4-Nc-ffl" firstAttribute="leading" secondItem="5qs-qr-fcC" secondAttribute="leading" id="kwE-T2-VTE"/>
+                            <constraint firstItem="sTv-fs-0oP" firstAttribute="height" secondItem="h9r-PS-8Zb" secondAttribute="height" multiplier="0.3" id="kwV-Rj-9er"/>
+                            <constraint firstItem="sTv-fs-0oP" firstAttribute="top" secondItem="5H4-Nc-ffl" secondAttribute="bottom" id="od3-Ie-W9K"/>
+                            <constraint firstItem="gKo-At-8Gy" firstAttribute="leading" secondItem="5qs-qr-fcC" secondAttribute="leading" id="sFu-Yh-ahP"/>
+                            <constraint firstItem="gKo-At-8Gy" firstAttribute="top" secondItem="5qs-qr-fcC" secondAttribute="top" id="xju-SL-BPJ"/>
+                            <constraint firstItem="sTv-fs-0oP" firstAttribute="leading" secondItem="5qs-qr-fcC" secondAttribute="leading" id="z2I-f1-Jvk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="FUF-Ms-kmr" id="Kb7-oF-HY9"/>
+                        <outlet property="blurredImageView" destination="gKo-At-8Gy" id="99F-FN-H6Y"/>
+                        <outlet property="searchBar" destination="5H4-Nc-ffl" id="WZe-jH-LXK"/>
+                        <outlet property="searchResultsTableView" destination="sTv-fs-0oP" id="GUo-S7-rab"/>
+                        <outlet property="tableView" destination="rzf-bI-43T" id="BtX-ZQ-mvY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sES-QT-mWz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="205.79710144927537" y="122.54464285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="207" height="368"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

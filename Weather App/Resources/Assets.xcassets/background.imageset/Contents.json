@@ -1,0 +1,22 @@
+{
+  "images" : [
+    {
+      "filename" : "25-252077_weather-wallpaper-iphone.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "25-252077_weather-wallpaper-iphone-1.jpg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
