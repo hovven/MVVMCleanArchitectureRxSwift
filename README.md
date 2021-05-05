@@ -1,5 +1,5 @@
 # MVVMCleanArchitecture
-Template iOS app using Clean Architecture and MVVM in RxSwift. Inspired from https://github.com/kudoleh/iOS-Clean-Architecture-MVVM#architecture-concepts-used-here
+Template iOS app using Clean Architecture and MVVM in RxSwift. Inspired from [iOS-Clean-Architecture-MVVM] (https://github.com/kudoleh/iOS-Clean-Architecture-MVVM#architecture-concepts-used-here)
 
 # Layers
 
@@ -9,14 +9,13 @@ Template iOS app using Clean Architecture and MVVM in RxSwift. Inspired from htt
 
 # Architecture concepts used here
 
-Clean Architecture https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html
-Advanced iOS App Architecture https://www.raywenderlich.com/8477-introducing-advanced-ios-app-architecture
-MVVM
-Data Binding using RxSwift
-Dependency Injection
-RxFlow Coordinator
-Data Transfer Object (DTO)
-UIKit view implementations by reusing same ViewModel (at least Xcode 11 required)
-Error handling examples: in ViewModel, in Networking
-
-#
+- Clean Architecture https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html
+- Advanced iOS App Architecture https://www.raywenderlich.com/8477-introducing-advanced-ios-app-architecture
+- [MVVM] (https://github.com/hovven/MVVMCleanArchitectureRxSwift/tree/main/Weather%20App/Presentation/Weather)
+- Data Binding using [RxCocoa] (https://github.com/ReactiveX/RxSwift/tree/main/RxCocoa)
+- Dependency Injection
+- [RxFlow] (https://github.com/RxSwiftCommunity/RxFlow) For Navigation
+- Data Transfer Object (DTO)
+- [Moya] (https://github.com/Moya/Moya) For Networking
+- [Reusable] (https://github.com/AliSoftware/Reusable)
+- Error handling examples: in ViewModel, in Networking
