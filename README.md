@@ -20,4 +20,6 @@ Inspired from [iOS-Clean-Architecture-MVVM](https://github.com/kudoleh/iOS-Clean
 - [Moya](https://github.com/Moya/Moya) For Networking
 - [Reusable](https://github.com/AliSoftware/Reusable)
 - Error handling examples: in ViewModel, in Networking
-- [RapidApi](https://rapidapi.com/marketplace)
+
+# How to use
+just paste your [RapidApi](https://rapidapi.com/marketplace) API_KEY to user_defined build settings
