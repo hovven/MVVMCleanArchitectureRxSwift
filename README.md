@@ -1,5 +1,5 @@
 # MVVMCleanArchitecture
-Template iOS app using Clean Architecture and MVVM in RxSwift. Inspired from [iOS-Clean-Architecture-MVVM] (https://github.com/kudoleh/iOS-Clean-Architecture-MVVM#architecture-concepts-used-here)
+Template iOS app using Clean Architecture and MVVM in RxSwift. Inspired from [iOS-Clean-Architecture-MVVM](https://github.com/kudoleh/iOS-Clean-Architecture-MVVM#architecture-concepts-used-here)
 
 # Layers
 
