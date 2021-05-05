@@ -839,7 +839,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5D00586C458A848A94A8C494 /* Pods-Weather App.debug.xcconfig */;
 			buildSettings = {
-				API_KEY = 293aafe614msh14615cf7fc3b718p1db64djsneefa9dda3a04;
+				API_KEY = "";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AUPY3739X3;
@@ -860,7 +860,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A631D51FF91922F6341A6650 /* Pods-Weather App.release.xcconfig */;
 			buildSettings = {
-				API_KEY = 293aafe614msh14615cf7fc3b718p1db64djsneefa9dda3a04;
+				API_KEY = "";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AUPY3739X3;
