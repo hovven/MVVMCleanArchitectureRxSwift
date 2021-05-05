@@ -1,5 +1,5 @@
 # MVVMCleanArchitecture
-Template iOS app using Clean Architecture and MVVM in RxSwift. Includes DIContainer, FlowCoordinator And DTO
+Template iOS app using Clean Architecture and MVVM in RxSwift. Inspired from https://github.com/kudoleh/iOS-Clean-Architecture-MVVM#architecture-concepts-used-here
 
 # Layers
 
@@ -18,3 +18,5 @@ RxFlow Coordinator
 Data Transfer Object (DTO)
 UIKit view implementations by reusing same ViewModel (at least Xcode 11 required)
 Error handling examples: in ViewModel, in Networking
+
+#
