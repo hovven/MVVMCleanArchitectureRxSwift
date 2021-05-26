@@ -14,7 +14,6 @@ final class AppDIContainer: HasPreferencesService, HasNetworkService, HasLocatio
     lazy var appConfiguration = AppConfiguration()
     
     lazy var networkService : NetworkService = {
-        
         let config = ApiDataNetworkConfig(headers: ["x-rapidapi-key":appConfiguration.apiKey])
         return DefaultNetworkService(config: config)
     }()
@@ -26,4 +25,6 @@ final class AppDIContainer: HasPreferencesService, HasNetworkService, HasLocatio
     func makeWeatherDIContainer() -> WeatherDIContainer {
         return WeatherDIContainer(networkService: networkService, locationService: locationService, preferencesService: preferencesService)
     }
+    
+    
 }

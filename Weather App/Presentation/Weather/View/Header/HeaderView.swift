@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HeaderView : UIView {
+class HeaderView : UIView, Alertable {
     
     var cityLabel : UILabel!
     var temperatureLabel : UILabel!
@@ -22,6 +22,10 @@ class HeaderView : UIView {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        setupView()
+    }
+    
+    override func layoutSubviews() {
         setupView()
     }
     

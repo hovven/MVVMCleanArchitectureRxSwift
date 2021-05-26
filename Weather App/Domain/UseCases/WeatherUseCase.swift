@@ -39,7 +39,7 @@ extension DefaultWeatherUseCase : WeatherUseCase {
         return Completable.create { [unowned self] completable in
             self.locationService.startUpdatingLocation()
             
-            self.locationService.locationServiceError.subscribe(onNext: {[unowned self] error in
+            self.locationService.locationServiceError.subscribe(onNext: { [unowned self] error in
                 if error != .NotAuthorized {
                     self.weatherRepository.setUserChosen()
                 }

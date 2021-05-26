@@ -11,7 +11,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     private let disposeBag = DisposeBag()
-    private var coordinator = FlowCoordinator()
+    private let coordinator = FlowCoordinator()
     private let appDIContainer = AppDIContainer()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {

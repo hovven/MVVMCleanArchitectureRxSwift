@@ -11,6 +11,7 @@ import Foundation
 import Reusable
 
 protocol ViewModel {
+    
 }
 
 protocol ServicesViewModel: ViewModel {

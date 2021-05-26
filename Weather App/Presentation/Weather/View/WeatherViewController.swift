@@ -13,7 +13,6 @@ import RxCocoa
 
 class WeatherViewController: UIViewController, StoryboardBased, ViewModelBased, Alertable {
     
-    typealias ViewModelType = WeatherViewModel
     var viewModel: WeatherViewModel!
     
     private let disposeBag = DisposeBag()
