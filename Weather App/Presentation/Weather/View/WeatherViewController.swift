@@ -135,6 +135,8 @@ class WeatherViewController: UIViewController, StoryboardBased, ViewModelBased, 
         
         tableView.rx.setDelegate(self)
             .disposed(by: disposeBag)
+        
+        
     }
     
     @objc private func dismissKeyboard() {
