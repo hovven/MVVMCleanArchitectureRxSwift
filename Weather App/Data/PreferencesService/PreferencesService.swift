@@ -9,10 +9,6 @@
 import Foundation
 import RxSwift
 
-protocol HasPreferencesService {
-    var preferencesService: PreferencesService { get }
-}
-
 enum QueryResponseError : Error {
     case NotFound
 }

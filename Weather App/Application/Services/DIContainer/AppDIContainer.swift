@@ -8,7 +8,7 @@
 
 import Foundation
 
-final class AppDIContainer: HasPreferencesService, HasNetworkService, HasLocationService {
+final class AppDIContainer {
     
     let preferencesService = PreferencesService()
     lazy var appConfiguration = AppConfiguration()

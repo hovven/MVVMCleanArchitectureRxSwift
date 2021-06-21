@@ -10,7 +10,7 @@ import Foundation
 import RxSwift
 import Moya
 
-final class DefaultWeatherRepository : HasNetworkService, HasPreferencesService {
+final class DefaultWeatherRepository {
     
     let networkService: NetworkService
     let preferencesService: PreferencesService

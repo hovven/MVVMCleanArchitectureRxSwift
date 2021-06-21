@@ -11,10 +11,6 @@ import CoreLocation
 import RxSwift
 import RxCocoa
 
-protocol HasLocationService {
-    var locationService: LocationService { get }
-}
-
 struct Coordinate {
     var latitude: Double
     var longitude: Double

@@ -16,7 +16,7 @@ protocol WeatherUseCase {
     func provideSearchResults(cityName: String) -> Single<SearchResult>
 }
 
-final class DefaultWeatherUseCase : HasLocationService {
+final class DefaultWeatherUseCase {
     
     let weatherRepository : WeatherRepository
     let locationService: LocationService

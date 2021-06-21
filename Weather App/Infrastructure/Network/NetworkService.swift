@@ -11,10 +11,6 @@ import Moya
 import RxSwift
 import Alamofire
 
-protocol HasNetworkService {
-    var networkService: NetworkService { get }
-}
-
 enum NetworkError: Error {
     case error(statusCode: Int, data: Data?)
     case notConnected
